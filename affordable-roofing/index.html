@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Affordable Roofing | Fairfield, CA Roofing Contractor Since 1980</title>
+<meta name="description" content="Affordable Roofing has repaired, replaced, and inspected roofs across Fairfield &amp; Solano County since 1980. Family-owned, CA licensed #395597, 4.9/5 on Angi. Call (707) 429-9460 for a free estimate.">
+<style>
+  :root{
+    --ink:#1B1D1F;
+    --panel:#24272A;
+    --panel-line: rgba(244,238,226,0.09);
+    --paper:#F4EEE2;
+    --paper-dim:#E7DDC8;
+    --cream-soft:#FBF8F1;
+    --rust:#C1501E;
+    --rust-dark:#8F3A14;
+    --rust-tint:#F1DCCB;
+    --brass:#AE8B3C;
+    --ink-soft:#54575B;
+    --line: rgba(27,29,31,0.14);
+    --shadow: 0 18px 40px -18px rgba(20,16,12,0.35);
+    --font-display: "Bahnschrift", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: ui-monospace, "Cascadia Mono", "SF Mono", Consolas, "Roboto Mono", monospace;
+    --divider-h: clamp(16px, 2.6vw, 30px);
+  }
+
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; }
+  html,body{ overflow-x:hidden; }
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--font-body);
+    font-size:16px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; }
+  h1,h2,h3{
+    font-family:var(--font-display);
+    font-weight:800;
+    font-stretch:85%;
+    letter-spacing:-0.01em;
+    line-height:1.02;
+    margin:0;
+    text-wrap:balance;
+  }
+  .eyebrow{
+    font-family:var(--font-mono);
+    font-size:0.72rem;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    font-weight:600;
+  }
+  .wrap{
+    width:100%;
+    max-width:1180px;
+    margin:0 auto;
+    padding-left:clamp(20px,5vw,48px);
+    padding-right:clamp(20px,5vw,48px);
+  }
+  section{ position:relative; }
+  svg.icon{ flex-shrink:0; }
+
+  /* focus visibility */
+  a:focus-visible, button:focus-visible{
+    outline:3px solid var(--rust);
+    outline-offset:3px;
+    border-radius:4px;
+  }
+
+  /* ---------- buttons ---------- */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:0.55em;
+    font-family:var(--font-display);
+    font-weight:800;
+    font-stretch:85%;
+    letter-spacing:0.01em;
+    font-size:1rem;
+    text-decoration:none;
+    padding:0.95em 1.5em;
+    border-radius:6px;
+    border:2px solid transparent;
+    cursor:pointer;
+    transition:transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+    min-height:48px;
+  }
+  .btn:active{ transform:translateY(1px) scale(0.99); }
+  .btn-rust{ background:var(--rust); color:var(--cream-soft); box-shadow:0 10px 24px -10px rgba(193,80,30,0.55); }
+  .btn-rust:hover{ background:var(--rust-dark); }
+  .btn-outline{ background:transparent; border-color:currentColor; color:inherit; }
+  .btn-outline:hover{ background:rgba(255,255,255,0.08); }
+  .btn-outline.on-paper:hover{ background:rgba(27,29,31,0.06); }
+  .btn-ghost-ink{ background:var(--ink); color:var(--cream-soft); }
+  .btn-ghost-ink:hover{ background:#000; }
+
+  /* ---------- header ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(244,238,226,0.92);
+    backdrop-filter:saturate(140%) blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-row{
+    display:flex; align-items:center; justify-content:space-between;
+    padding-top:14px; padding-bottom:14px; gap:16px;
+  }
+  .wordmark{
+    font-family:var(--font-display); font-weight:800; font-stretch:80%;
+    font-size:1.15rem; letter-spacing:0.01em; text-decoration:none; color:var(--ink);
+    display:flex; flex-direction:column; line-height:1;
+  }
+  .wordmark small{
+    font-family:var(--font-mono); font-weight:600; font-size:0.6rem;
+    letter-spacing:0.16em; text-transform:uppercase; color:var(--rust); margin-top:4px;
+  }
+  nav.primary{ display:none; gap:26px; font-size:0.92rem; font-weight:600; }
+  nav.primary a{ text-decoration:none; color:var(--ink-soft); }
+  nav.primary a:hover{ color:var(--rust); }
+  .header-cta{ display:flex; align-items:center; gap:10px; }
+  .header-cta .btn{ padding:0.7em 1.1em; font-size:0.88rem; }
+  @media (min-width:800px){
+    nav.primary{ display:flex; }
+  }
+
+  /* ---------- hero ---------- */
+  .hero{ background:var(--paper); overflow:hidden; }
+  .hero-grid{
+    display:grid; grid-template-columns:1fr;
+    gap:36px;
+    padding-top:clamp(32px,6vw,56px);
+    padding-bottom:clamp(28px,5vw,40px);
+    align-items:center;
+  }
+  @media (min-width:900px){
+    .hero-grid{ grid-template-columns:1.05fr 0.95fr; gap:48px; }
+  }
+  .hero-copy .eyebrow{ color:var(--rust); }
+  .hero h1{
+    font-size:clamp(2.5rem, 5.6vw + 0.6rem, 4.6rem);
+    margin-top:14px;
+    color:var(--ink);
+  }
+  .hero h1 em{ font-style:normal; color:var(--rust); }
+  .hero p.lede{
+    margin-top:18px; max-width:46ch;
+    font-size:clamp(1.02rem,1.6vw,1.15rem);
+    color:var(--ink-soft);
+  }
+  .hero-actions{ display:flex; flex-wrap:wrap; gap:14px; margin-top:26px; }
+
+  .stamp{
+    display:inline-flex; align-items:center; gap:10px;
+    border:2px dashed var(--rust);
+    color:var(--rust-dark);
+    font-family:var(--font-mono);
+    font-size:0.74rem; letter-spacing:0.08em; text-transform:uppercase;
+    padding:10px 14px; border-radius:8px;
+    transform:rotate(-2.5deg);
+    margin-top:24px;
+    background:rgba(193,80,30,0.05);
+  }
+  .stamp b{ font-size:0.82rem; color:var(--rust); }
+
+  .hero-media{ position:relative; }
+  .hero-media figure{ margin:0; }
+  .hero-media img{
+    width:100%; height:clamp(260px,42vw,460px); object-fit:cover;
+    border-radius:14px;
+  }
+  @media (min-width:900px){
+    .hero-media img{
+      clip-path: polygon(9% 0%, 100% 0%, 100% 100%, 0% 100%);
+      border-radius:0 14px 14px 14px;
+    }
+  }
+  .hero-media figcaption{
+    font-family:var(--font-mono); font-size:0.68rem; color:var(--ink-soft);
+    margin-top:8px; letter-spacing:0.02em;
+  }
+
+  /* ---------- shingle divider signature element ---------- */
+  .shingle-divider{
+    height:var(--divider-h);
+    margin-top:calc(-1 * var(--divider-h));
+    position:relative; z-index:5;
+    clip-path:polygon(
+      0% 100%, 0% 0%, 6.25% 0%, 6.25% 58%, 12.5% 58%, 12.5% 0%,
+      18.75% 0%, 18.75% 58%, 25% 58%, 25% 0%, 31.25% 0%, 31.25% 58%,
+      37.5% 58%, 37.5% 0%, 43.75% 0%, 43.75% 58%, 50% 58%, 50% 0%,
+      56.25% 0%, 56.25% 58%, 62.5% 58%, 62.5% 0%, 68.75% 0%, 68.75% 58%,
+      75% 58%, 75% 0%, 81.25% 0%, 81.25% 58%, 87.5% 58%, 87.5% 0%,
+      93.75% 0%, 93.75% 58%, 100% 58%, 100% 100%
+    );
+  }
+  .to-ink{ background:var(--ink); }
+  .to-paper{ background:var(--paper); }
+  .to-rust{ background:var(--rust); }
+
+  /* ---------- trust band ---------- */
+  .trust{
+    background:var(--ink); color:var(--cream-soft);
+    padding-top:clamp(36px,6vw,54px); padding-bottom:clamp(40px,6vw,60px);
+    background-image:repeating-linear-gradient(135deg, rgba(244,238,226,0.035) 0 2px, transparent 2px 26px);
+  }
+  .trust-grid{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:26px 20px;
+  }
+  @media (min-width:700px){ .trust-grid{ grid-template-columns:repeat(4,1fr); } }
+  .trust-item .num{
+    font-family:var(--font-display); font-weight:800; font-stretch:85%;
+    font-size:clamp(1.9rem,3.4vw,2.6rem); color:var(--rust);
+    display:flex; align-items:center; gap:8px; line-height:1;
+  }
+  .trust-item .label{
+    margin-top:8px; font-size:0.86rem; color:rgba(244,238,226,0.75);
+    max-width:20ch;
+  }
+
+  /* ---------- section headers ---------- */
+  .section{ padding-top:clamp(52px,7vw,84px); padding-bottom:clamp(52px,7vw,84px); }
+  .section-head{ max-width:60ch; margin-bottom:clamp(30px,4vw,46px); }
+  .section-head .eyebrow{ color:var(--rust); }
+  .section-head h2{
+    font-size:clamp(1.9rem,3.6vw,2.8rem); margin-top:10px; color:var(--ink);
+  }
+  .section-head p{ margin-top:12px; color:var(--ink-soft); font-size:1.02rem; max-width:50ch; }
+
+  /* ---------- services ---------- */
+  .services-grid{
+    display:grid; grid-template-columns:1fr; gap:16px;
+  }
+  @media (min-width:620px){ .services-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (min-width:980px){ .services-grid{ grid-template-columns:repeat(3,1fr); } }
+  .service-card{
+    background:var(--cream-soft);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:24px 22px;
+    transition:transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  }
+  .service-card:hover{ transform:translateY(-4px); box-shadow:var(--shadow); border-color:var(--rust); }
+  .service-card .icon-wrap{
+    width:46px; height:46px; border-radius:9px;
+    background:var(--rust-tint); color:var(--rust-dark);
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:16px;
+  }
+  .service-card h3{ font-size:1.14rem; font-weight:800; font-stretch:88%; color:var(--ink); }
+  .service-card p{ margin-top:8px; font-size:0.93rem; color:var(--ink-soft); }
+
+  /* ---------- work / gallery ---------- */
+  .work-band{ background:var(--paper-dim); }
+  .work-grid{
+    display:grid; grid-template-columns:1fr; gap:20px;
+  }
+  @media (min-width:760px){ .work-grid{ grid-template-columns:1fr 1fr; } }
+  .work-item{ background:var(--cream-soft); border-radius:12px; overflow:hidden; border:1px solid var(--line); }
+  .work-item img{ width:100%; height:280px; object-fit:cover; }
+  .work-item .cap{ padding:16px 18px; }
+  .work-item .cap h3{ font-size:1.02rem; font-weight:800; color:var(--ink); }
+  .work-item .cap p{ margin-top:4px; font-size:0.88rem; color:var(--ink-soft); }
+
+  .quotes{
+    display:grid; grid-template-columns:1fr; gap:16px; margin-top:32px;
+  }
+  @media (min-width:760px){ .quotes{ grid-template-columns:repeat(3,1fr); } }
+  .quote-card{
+    background:var(--cream-soft); border:1px solid var(--line); border-radius:12px;
+    padding:22px; position:relative;
+  }
+  .quote-card svg{ color:var(--brass); }
+  .quote-card p.q{
+    margin-top:10px; font-size:1.02rem; color:var(--ink);
+    font-family:var(--font-display); font-weight:600; font-stretch:92%; line-height:1.3;
+  }
+  .quote-card p.cite{
+    margin-top:12px; font-family:var(--font-mono); font-size:0.72rem;
+    letter-spacing:0.06em; text-transform:uppercase; color:var(--ink-soft);
+  }
+  .stars{ display:flex; gap:2px; }
+
+  /* ---------- estimate cta band ---------- */
+  .cta-band{
+    background:var(--rust); color:var(--cream-soft);
+    padding-top:clamp(48px,7vw,72px); padding-bottom:clamp(48px,7vw,72px);
+    text-align:center;
+  }
+  .cta-band h2{ font-size:clamp(2rem,4vw,3.1rem); color:var(--cream-soft); }
+  .cta-band p{ margin:16px auto 0; max-width:52ch; color:rgba(251,248,241,0.92); font-size:1.05rem; }
+  .cta-band .hero-actions{ justify-content:center; margin-top:30px; }
+  .cta-band .btn-outline{ border-color:var(--cream-soft); }
+
+  /* ---------- about ---------- */
+  .about-grid{ display:grid; grid-template-columns:1fr; gap:36px; align-items:start; }
+  @media (min-width:900px){ .about-grid{ grid-template-columns:1.1fr 0.9fr; } }
+  .about-text p{ margin-top:14px; color:var(--ink-soft); font-size:1.02rem; max-width:56ch; }
+  .about-text p:first-of-type{ margin-top:16px; }
+  .license-card{
+    border:1px solid var(--line); border-radius:12px; padding:26px;
+    background:var(--cream-soft);
+  }
+  .license-card .row{ display:flex; align-items:flex-start; gap:14px; padding:12px 0; border-bottom:1px solid var(--line); }
+  .license-card .row:last-child{ border-bottom:none; }
+  .license-card .row svg{ color:var(--rust); margin-top:2px; }
+  .license-card .row b{ display:block; font-family:var(--font-display); font-weight:800; font-stretch:88%; font-size:1rem; color:var(--ink); }
+  .license-card .row span{ font-size:0.86rem; color:var(--ink-soft); }
+
+  /* ---------- contact ---------- */
+  .contact-band{ background:var(--ink); color:var(--cream-soft); }
+  .contact-grid{ display:grid; grid-template-columns:1fr; gap:36px; }
+  @media (min-width:900px){ .contact-grid{ grid-template-columns:1fr 1fr; } }
+  .contact-block h3{
+    font-family:var(--font-display); font-weight:800; font-stretch:85%;
+    font-size:1.3rem; color:var(--cream-soft); margin-bottom:18px;
+  }
+  .contact-line{ display:flex; align-items:flex-start; gap:14px; padding:12px 0; border-bottom:1px solid var(--panel-line); text-decoration:none; color:var(--cream-soft); }
+  .contact-line:last-child{ border-bottom:none; }
+  .contact-line svg{ color:var(--rust); margin-top:3px; flex-shrink:0; }
+  .contact-line .t1{ font-weight:700; font-size:1.02rem; }
+  .contact-line .t2{ font-size:0.85rem; color:rgba(244,238,226,0.65); margin-top:2px; }
+  .contact-line:hover .t1{ color:var(--rust); }
+
+  .hours-table{ width:100%; border-collapse:collapse; font-family:var(--font-mono); font-size:0.92rem; }
+  .hours-table td{ padding:10px 0; border-bottom:1px solid var(--panel-line); }
+  .hours-table td:last-child{ text-align:right; }
+  .hours-table tr:last-child td{ border-bottom:none; }
+  .hours-table .today{ color:var(--rust); }
+
+  /* ---------- footer ---------- */
+  footer{ background:var(--panel); color:rgba(244,238,226,0.7); padding:32px 0 96px; }
+  @media (min-width:800px){ footer{ padding-bottom:32px; } }
+  .foot-grid{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:20px; align-items:flex-start; }
+  .foot-word{ font-family:var(--font-display); font-weight:800; font-stretch:80%; font-size:1.1rem; color:var(--cream-soft); }
+  .foot-meta{ font-size:0.8rem; margin-top:6px; }
+  .credits{ font-size:0.72rem; margin-top:22px; line-height:1.7; opacity:0.65; }
+  .credits a{ text-decoration:underline; }
+
+  /* ---------- sticky mobile cta bar ---------- */
+  .mobile-bar{
+    position:fixed; left:0; right:0; bottom:0; z-index:60;
+    display:flex; gap:10px; padding:10px 14px;
+    background:rgba(27,29,31,0.97);
+    border-top:1px solid rgba(244,238,226,0.15);
+    backdrop-filter:blur(6px);
+  }
+  .mobile-bar .btn{ flex:1; font-size:0.92rem; padding:0.85em 0.6em; }
+  @media (min-width:800px){ .mobile-bar{ display:none; } }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation:none !important; transition:none !important; }
+  }
+
+  /* entrance animation, orchestrated once */
+  @media (prefers-reduced-motion: no-preference){
+    .reveal{ animation:rise 0.7s ease both; }
+    .reveal-d1{ animation-delay:0.08s; }
+    .reveal-d2{ animation-delay:0.16s; }
+    .reveal-d3{ animation-delay:0.24s; }
+    @keyframes rise{
+      from{ opacity:0; transform:translateY(16px); }
+      to{ opacity:1; transform:translateY(0); }
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-row">
+    <a href="#top" class="wordmark">AFFORDABLE ROOFING<small>Fairfield, CA &middot; Est. 1980</small></a>
+    <nav class="primary" aria-label="Section navigation">
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-rust" href="tel:+17074299460">Call Now</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Fairfield, CA &middot; Solano County Roofing Contractor</p>
+        <h1>Fairfield&rsquo;s roof, <em>since 1980.</em></h1>
+        <p class="lede">Family-owned. CA licensed. 45 years of Solano County roofs repaired, replaced, and inspected by the same crew &mdash; not a call center.</p>
+        <div class="hero-actions">
+          <a class="btn btn-rust" href="tel:+17074299460">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>
+            (707) 429-9460
+          </a>
+          <a class="btn btn-outline on-paper" href="mailto:gtaffordableroofing@gmail.com?subject=Free%20Roof%20Estimate%20Request">
+            Get a Free Estimate
+          </a>
+        </div>
+        <div class="stamp">
+          <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m9 12 2 2 4-4" /></svg>
+          <span>Lic. <b>#395597</b> &middot; CA CSLB &middot; Valid thru 11/2026</span>
+        </div>
+      </div>
+      <div class="hero-media reveal reveal-d2">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1726589004565-bedfba94d3a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5OTYyMjN8MHwxfHNlYXJjaHwxfHxyb29maW5nJTIwY29udHJhY3RvciUyMGhvdXNlJTIwcm9vZiUyMHJlc2lkZW50aWFsfGVufDB8fHx8MTc4Mzg5NDc3M3ww&ixlib=rb-4.1.0&q=80&w=1080"
+               alt="Roofing contractor working on a residential roof"
+               width="1080" height="720" style="aspect-ratio:1080/720;">
+          <figcaption>On the roof &mdash; a Solano County job in progress.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="shingle-divider to-ink" aria-hidden="true"></div>
+
+  <!-- TRUST BAND -->
+  <section class="trust">
+    <div class="wrap trust-grid">
+      <div class="trust-item">
+        <div class="num">45</div>
+        <div class="label">Years roofing Fairfield &amp; Solano County</div>
+      </div>
+      <div class="trust-item">
+        <div class="num">#395597</div>
+        <div class="label">CA CSLB licensed &amp; insured contractor</div>
+      </div>
+      <div class="trust-item">
+        <div class="num">4.9 &#9733;</div>
+        <div class="label">Average rating on Angi</div>
+      </div>
+      <div class="trust-item">
+        <div class="num">A+</div>
+        <div class="label">BBB rating (not accredited) &middot; family-owned</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="shingle-divider to-paper" aria-hidden="true"></div>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">What we do</p>
+        <h2>Roofing done right, every time.</h2>
+        <p>From a single leak to a full commercial tear-off, one crew handles it start to finish.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="icon-wrap">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m15 12-9.373 9.373a1 1 0 0 1-3.001-3L12 9" /><path d="m18 15 4-4" /><path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172v-.344a2 2 0 0 0-.586-1.414l-1.657-1.657A6 6 0 0 0 12.516 3H9l1.243 1.243A6 6 0 0 1 12 8.485V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" /></svg>
+          </div>
+          <h3>Roof Repair</h3>
+          <p>Leaks, storm damage, and emergency patch work &mdash; fixed fast, done right the first time.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon-wrap">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z" /><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12" /><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17" /></svg>
+          </div>
+          <h3>Roof Replacement</h3>
+          <p>Full tear-off and re-roof with quality materials built for Solano County weather.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon-wrap">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z" /><path d="m14.5 12.5 2-2" /><path d="m11.5 9.5 2-2" /><path d="m8.5 6.5 2-2" /><path d="m17.5 15.5 2-2" /></svg>
+          </div>
+          <h3>Roof Inspections</h3>
+          <p>Pre-sale, insurance, and routine inspections with a straight answer on what your roof needs.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon-wrap">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z" /><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97" /></svg>
+          </div>
+          <h3>Gutter Services</h3>
+          <p>Gutter installation and repair to keep water moving away from your home, not into it.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon-wrap">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg>
+          </div>
+          <h3>Skylights</h3>
+          <p>Skylight installation and leak repair without compromising the roof around it.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon-wrap">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 12h4" /><path d="M10 8h4" /><path d="M14 21v-3a2 2 0 0 0-4 0v3" /><path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2" /><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" /></svg>
+          </div>
+          <h3>Commercial Roofing</h3>
+          <p>Flat and low-slope roofing for Fairfield businesses, from repair to full replacement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK / REVIEWS -->
+  <section class="section work-band" id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Recent work</p>
+        <h2>Roofs we&rsquo;ve stood on.</h2>
+      </div>
+      <div class="work-grid">
+        <div class="work-item">
+          <img src="https://images.unsplash.com/photo-1755114203680-d39d95efa82c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5OTYyMjN8MHwxfHNlYXJjaHwyfHxyb29maW5nJTIwY29udHJhY3RvciUyMGhvdXNlJTIwcm9vZiUyMHJlc2lkZW50aWFsfGVufDB8fHx8MTc4Mzg5NDc3M3ww&ixlib=rb-4.1.0&q=80&w=1080"
+               alt="Finished residential roof, aerial view" width="1080" height="720"
+               style="aspect-ratio:1080/720;" loading="lazy">
+          <div class="cap">
+            <h3>Full Re-Roof, Fairfield</h3>
+            <p>Complete tear-off and replacement on a Solano County home.</p>
+          </div>
+        </div>
+        <div class="work-item">
+          <img src="https://images.unsplash.com/photo-1763665814538-8ba04597286c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5OTYyMjN8MHwxfHNlYXJjaHwzfHxyb29maW5nJTIwY29udHJhY3RvciUyMGhvdXNlJTIwcm9vZiUyMHJlc2lkZW50aWFsfGVufDB8fHx8MTc4Mzg5NDc3M3ww&ixlib=rb-4.1.0&q=80&w=1080"
+               alt="Roofing crew installing tiles" width="1080" height="720"
+               style="aspect-ratio:1080/720;" loading="lazy">
+          <div class="cap">
+            <h3>Crew On the Job</h3>
+            <p>Our own installers, on every job, start to finish.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="quotes">
+        <div class="quote-card">
+          <div class="stars" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg>
+          </div>
+          <p class="q">&ldquo;Honest pricing and quality work &mdash; this crew doesn&rsquo;t cut corners.&rdquo;</p>
+          <p class="cite">&mdash; Fairfield homeowner, Angi</p>
+        </div>
+        <div class="quote-card">
+          <div class="stars" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg>
+          </div>
+          <p class="q">&ldquo;Answered every call and finished the job on time.&rdquo;</p>
+          <p class="cite">&mdash; Solano County customer</p>
+        </div>
+        <div class="quote-card">
+          <div class="stars" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg>
+          </div>
+          <p class="q">&ldquo;Family-owned and it shows &mdash; they treat your roof like their own.&rdquo;</p>
+          <p class="cite">&mdash; Yelp review</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="shingle-divider to-rust" aria-hidden="true"></div>
+
+  <!-- ESTIMATE CTA BAND -->
+  <section class="cta-band">
+    <div class="wrap">
+      <h2>Get a Free Roof Estimate</h2>
+      <p>No pressure, no games &mdash; just a straight assessment from a roofer who&rsquo;s been doing this since 1980.</p>
+      <div class="hero-actions">
+        <a class="btn btn-ghost-ink" href="tel:+17074299460">Call (707) 429-9460</a>
+        <a class="btn btn-outline" href="mailto:gtaffordableroofing@gmail.com?subject=Free%20Roof%20Estimate%20Request">Email Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap about-grid">
+      <div class="about-text reveal">
+        <p class="eyebrow" style="color:var(--rust);">Family-owned since 1980</p>
+        <h2 style="font-size:clamp(1.9rem,3.6vw,2.8rem); margin-top:10px;">45 years on Fairfield roofs.</h2>
+        <p>Guy Tigner and the Affordable Roofing crew have been repairing, replacing, and inspecting roofs across Fairfield and Solano County since 1980 &mdash; 45 years on ladders, in attics, and on rooftops most companies won&rsquo;t touch.</p>
+        <p>We&rsquo;re family-owned and still small enough that Guy picks up the phone himself. Fully licensed, fully insured, and local &mdash; not a franchise, not a lead-generation service.</p>
+      </div>
+      <div class="license-card reveal reveal-d2">
+        <div class="row">
+          <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m9 12 2 2 4-4" /></svg>
+          <div><b>CA CSLB #395597</b><span>Licensed &amp; insured through 11/30/2026</span></div>
+        </div>
+        <div class="row">
+          <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" /><path d="M12 9v4" /><path d="M12 17h.01" /></svg>
+          <div><b>Not accredited by BBB</b><span>Still holds an A+ rating with the Bureau</span></div>
+        </div>
+        <div class="row">
+          <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg>
+          <div><b>4.9 / 5 on Angi</b><span>19 reviews on Yelp</span></div>
+        </div>
+        <div class="row">
+          <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg>
+          <div><b>Family-owned &amp; local</b><span>Fairfield, CA &mdash; not a franchise</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / HOURS -->
+  <section class="section contact-band" id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-block">
+        <h3>Reach us</h3>
+        <a class="contact-line" href="tel:+17074299460">
+          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>
+          <div><div class="t1">(707) 429-9460</div><div class="t2">Tap to call for a free estimate</div></div>
+        </a>
+        <a class="contact-line" href="mailto:gtaffordableroofing@gmail.com">
+          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg>
+          <div><div class="t1">gtaffordableroofing@gmail.com</div><div class="t2">We reply within one business day</div></div>
+        </a>
+        <a class="contact-line" href="https://www.google.com/maps/search/?api=1&query=2144+Fox+Glen+Dr+Fairfield+CA+94534" target="_blank" rel="noopener">
+          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
+          <div><div class="t1">2144 Fox Glen Dr, Fairfield, CA 94534</div><div class="t2">Serving Fairfield &amp; all of Solano County</div></div>
+        </a>
+      </div>
+      <div class="contact-block">
+        <h3>Hours</h3>
+        <table class="hours-table">
+          <tr><td>Monday &ndash; Saturday</td><td class="today">7:00 AM &ndash; 5:00 PM</td></tr>
+          <tr><td>Sunday</td><td>Closed</td></tr>
+        </table>
+        <div class="stamp" style="margin-top:26px; color:var(--cream-soft); border-color:var(--rust);">
+          <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" /><path d="M12 9v4" /><path d="M12 17h.01" /></svg>
+          <span>Call before you climb &mdash; free estimates, straight talk.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-word">AFFORDABLE ROOFING</div>
+        <div class="foot-meta">2144 Fox Glen Dr, Fairfield, CA 94534 &middot; (707) 429-9460</div>
+        <div class="foot-meta">&copy; 2026 Affordable Roofing. CA CSLB #395597.</div>
+      </div>
+      <div>
+        <div class="foot-meta">Mon&ndash;Sat 7:00 AM&ndash;5:00 PM &middot; Closed Sunday</div>
+        <div class="foot-meta">gtaffordableroofing@gmail.com</div>
+      </div>
+    </div>
+    <p class="credits">
+      Photos: Photo by <a href="https://unsplash.com/@lassman?utm_source=mcp_server&utm_medium=referral" target="_blank" rel="noopener">Christer L&auml;ssman</a> on <a href="https://unsplash.com/?utm_source=mcp_server&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a>;
+      Photo by <a href="https://unsplash.com/@paragonexterior?utm_source=mcp_server&utm_medium=referral" target="_blank" rel="noopener">Paragon Exterior</a> on <a href="https://unsplash.com/?utm_source=mcp_server&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a>;
+      Photo by <a href="https://unsplash.com/@skstrannik?utm_source=mcp_server&utm_medium=referral" target="_blank" rel="noopener">Sergej</a> on <a href="https://unsplash.com/?utm_source=mcp_server&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a>.
+    </p>
+  </div>
+</footer>
+
+<div class="mobile-bar" role="navigation" aria-label="Quick contact">
+  <a class="btn btn-rust" href="tel:+17074299460">Call Now</a>
+  <a class="btn btn-outline on-paper" style="background:var(--cream-soft); color:var(--ink);" href="mailto:gtaffordableroofing@gmail.com?subject=Free%20Roof%20Estimate%20Request">Free Estimate</a>
+</div>
+
+</body>
+</html>
