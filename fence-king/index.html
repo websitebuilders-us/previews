@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fence King | Fence &amp; Gate Contractor in Elmira &amp; Vacaville, CA</title>
+<meta name="description" content="Fence King builds redwood fences and steel-post gates for Elmira, Vacaville, and Solano County. Same-week estimates, family-owned, 25-year transferable warranty. Call (707) 448-9600.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Fence King | Fence & Gate Contractor in Elmira & Vacaville, CA">
+<meta property="og:description" content="Redwood fences and steel-post gates built for Solano County. Same-week estimates, 25-year transferable warranty.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Fence King",
+  "image": "",
+  "telephone": "+1-707-448-9600",
+  "email": "FENCEKING96@yahoo.com",
+  "description": "Fencing and gate contractor building redwood fences and steel-post gates for Elmira, Vacaville, and Solano County, California.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Elmira",
+    "addressRegion": "CA",
+    "postalCode": "95687",
+    "addressCountry": "US"
+  },
+  "areaServed": ["Elmira, CA", "Vacaville, CA", "Solano County, CA"],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "08:00",
+    "closes": "17:00"
+  },
+  "sameAs": ["https://instagram.com/fenceking96"]
+}
+</script>
+<style>
+/* ============================================================
+   FENCE KING — design tokens
+   Palette (WCAG contrast checked against paper #f2ede0 / ink #1b1d17):
+     --ink          #1b1d17  ink on paper: 14.55:1
+     --ink-soft     #3a392f  ink-soft on paper: 9.95:1
+     --redwood      #a8471f  redwood on paper: 5.01:1 (AA normal text)
+     --redwood-bright #e08a52  bright-redwood on ink: 6.42:1
+     --redwood-deep #7c3316  hover/shadow only
+     --steel        #8b9086  decorative dividers/icons only (2.8:1 — not used for text)
+     --paper        #f2ede0
+     --paper-soft   #e8e0cd
+     --amber        #dc9a2e  amber-on-ink: 7.05:1 | ink-on-amber: 7.05:1
+   ============================================================ */
+:root{
+  --ink:#1b1d17;
+  --ink-soft:#3a392f;
+  --redwood:#a8471f;
+  --redwood-bright:#e08a52;
+  --redwood-deep:#7c3316;
+  --steel:#8b9086;
+  --steel-line: rgba(139,144,134,.35);
+  --paper:#f2ede0;
+  --paper-soft:#e8e0cd;
+  --amber:#dc9a2e;
+
+  --font-display:'Oswald', 'Arial Narrow', sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-mono: ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Courier New', monospace;
+
+  --maxw: 1180px;
+  --radius: 3px;
+}
+
+/* Oswald 600 — subset Basic Latin, OFL license, google/fonts */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(data:font/woff2;base64,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) format('woff2');
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior:auto; }
+  *,*::before,*::after{ animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important; }
+}
+body{
+  margin:0;
+  font-family:var(--font-body);
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img,svg{ max-width:100%; display:block; }
+a{ color:inherit; }
+h1,h2,h3{ font-family:var(--font-display); font-weight:600; letter-spacing:0.01em; line-height:1.05; margin:0; text-transform:uppercase; }
+p{ margin:0; }
+.wrap{ max-width:var(--maxw); margin:0 auto; padding-inline:clamp(20px,5vw,48px); }
+.sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+.skip-link{
+  position:absolute; left:12px; top:-60px; z-index:200;
+  background:var(--amber); color:var(--ink); padding:10px 16px; border-radius:var(--radius);
+  font-family:var(--font-display); text-transform:uppercase; font-size:0.85rem; letter-spacing:0.05em;
+  transition:top .2s ease;
+}
+.skip-link:focus{ top:12px; }
+
+:focus-visible{ outline:3px solid var(--amber); outline-offset:2px; }
+
+/* ---------- picket-rail divider (signature device) ---------- */
+.picket-rail{
+  height:16px;
+  background-image: repeating-linear-gradient(90deg, var(--steel-line) 0 3px, transparent 3px 26px);
+  background-position:center;
+}
+.picket-rail.on-ink{ background-image: repeating-linear-gradient(90deg, rgba(224,138,82,.4) 0 3px, transparent 3px 26px); }
+
+/* ---------- header ---------- */
+.site-header{
+  position:sticky; top:0; z-index:100;
+  background:rgba(27,29,23,.96);
+  border-bottom:1px solid rgba(224,138,82,.25);
+}
+.header-row{
+  display:flex; align-items:center; justify-content:space-between;
+  padding-block:14px;
+}
+.brand{ display:flex; align-items:center; gap:10px; text-decoration:none; }
+.brand-mark{
+  width:38px; height:38px; border-radius:50%;
+  background:var(--redwood); color:var(--paper);
+  display:flex; align-items:center; justify-content:center; flex-shrink:0;
+}
+.brand-mark svg{ width:20px; height:20px; }
+.brand-word{ font-family:var(--font-display); color:var(--paper); font-size:1.15rem; letter-spacing:0.03em; }
+.brand-word b{ color:var(--redwood-bright); font-weight:600; }
+
+.main-nav{ display:none; align-items:center; gap:28px; }
+.main-nav a{
+  text-decoration:none; color:var(--paper-soft); font-family:var(--font-display);
+  font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase;
+  padding-block:4px; border-bottom:2px solid transparent; transition:border-color .2s ease, color .2s ease;
+}
+.main-nav a:hover, .main-nav a:focus-visible{ color:var(--redwood-bright); border-color:var(--redwood-bright); }
+
+.header-cta{ display:flex; align-items:center; gap:10px; }
+.call-pill{
+  display:inline-flex; align-items:center; gap:8px;
+  background:var(--amber); color:var(--ink); text-decoration:none;
+  font-family:var(--font-display); font-size:0.82rem; letter-spacing:0.04em; text-transform:uppercase;
+  padding:10px 16px; border-radius:999px; transition:transform .15s ease, box-shadow .15s ease;
+  white-space:nowrap;
+}
+.call-pill svg{ width:16px; height:16px; }
+.call-pill:hover, .call-pill:focus-visible{ transform:translateY(-1px); box-shadow:0 6px 16px rgba(220,154,46,.35); }
+
+.nav-toggle{
+  display:inline-flex; background:none; border:1px solid rgba(224,138,82,.4); border-radius:var(--radius);
+  color:var(--paper); padding:8px; cursor:pointer;
+}
+.nav-toggle svg{ width:22px; height:22px; }
+.nav-toggle .icon-x{ display:none; }
+.nav-toggle[aria-expanded="true"] .icon-menu{ display:none; }
+.nav-toggle[aria-expanded="true"] .icon-x{ display:block; }
+
+.mobile-panel{
+  display:none; flex-direction:column; gap:2px;
+  background:var(--ink); border-top:1px solid rgba(224,138,82,.25);
+  padding:10px clamp(20px,5vw,48px) 20px;
+}
+.mobile-panel.open{ display:flex; }
+.mobile-panel a{
+  color:var(--paper-soft); text-decoration:none; padding:12px 4px; border-bottom:1px solid rgba(139,144,134,.18);
+  font-family:var(--font-display); text-transform:uppercase; letter-spacing:0.05em; font-size:0.92rem;
+}
+.mobile-panel a:last-child{ border-bottom:none; }
+
+@media (min-width:900px){
+  .main-nav{ display:flex; }
+  .nav-toggle{ display:none; }
+  .mobile-panel{ display:none !important; }
+}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;
+  background:
+    radial-gradient(1100px 600px at 82% -10%, rgba(224,138,82,.18), transparent 60%),
+    repeating-linear-gradient(115deg, rgba(139,144,134,.05) 0 2px, transparent 2px 34px),
+    var(--ink);
+  color:var(--paper);
+  overflow:hidden;
+}
+.hero-grid{
+  display:grid; grid-template-columns:1fr; gap:36px;
+  padding-block:clamp(56px,9vw,104px) clamp(48px,7vw,80px);
+  align-items:center;
+}
+@media (min-width:960px){
+  .hero-grid{ grid-template-columns:1.1fr 0.9fr; gap:24px; }
+}
+.eyebrow{
+  display:inline-flex; align-items:center; gap:8px;
+  font-family:var(--font-mono); font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase;
+  color:var(--redwood-bright); border:1px solid rgba(224,138,82,.4); border-radius:999px;
+  padding:6px 12px; margin-bottom:20px;
+}
+.eyebrow svg{ width:13px; height:13px; }
+.hero h1{
+  font-size:clamp(2.5rem,6.4vw,4.3rem);
+  color:var(--paper);
+}
+.hero h1 .accent{ color:var(--redwood-bright); }
+.hero-sub{
+  margin-top:20px; max-width:46ch; color:var(--paper-soft);
+  font-size:clamp(1rem,1.6vw,1.15rem);
+}
+.hero-ctas{ display:flex; flex-wrap:wrap; gap:14px; margin-top:32px; }
+.btn{
+  display:inline-flex; align-items:center; gap:10px; text-decoration:none;
+  font-family:var(--font-display); text-transform:uppercase; letter-spacing:0.04em; font-size:0.92rem;
+  padding:15px 26px; border-radius:var(--radius); transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+  border:2px solid transparent;
+}
+.btn svg{ width:18px; height:18px; flex-shrink:0; }
+.btn-primary{ background:var(--amber); color:var(--ink); }
+.btn-primary:hover, .btn-primary:focus-visible{ transform:translateY(-2px); box-shadow:0 10px 22px rgba(220,154,46,.3); }
+.btn-outline{ border-color:rgba(242,237,224,.4); color:var(--paper); }
+.btn-outline:hover, .btn-outline:focus-visible{ border-color:var(--redwood-bright); color:var(--redwood-bright); transform:translateY(-2px); }
+
+.trust-row{
+  display:flex; flex-wrap:wrap; gap:10px 18px; margin-top:30px;
+  font-family:var(--font-mono); font-size:0.78rem; letter-spacing:0.03em; color:var(--steel);
+}
+.trust-row span{ display:inline-flex; align-items:center; gap:6px; }
+.trust-row svg{ width:14px; height:14px; color:var(--amber); }
+
+/* hero diagram */
+.hero-diagram{ display:none; }
+@media (min-width:960px){
+  .hero-diagram{ display:block; position:relative; }
+  .dim-label{
+    font-family:var(--font-mono); font-size:0.72rem; letter-spacing:0.06em; fill:var(--redwood-bright);
+  }
+}
+
+/* ---------- stat strip ---------- */
+.stat-strip{ background:var(--paper); border-bottom:1px solid rgba(27,29,23,.08); }
+.stat-grid{
+  display:grid; grid-template-columns:1fr; padding-block:0;
+}
+@media (min-width:760px){
+  .stat-grid{ grid-template-columns:repeat(4,1fr); }
+}
+.stat-cell{
+  padding:26px 18px; border-top:1px solid rgba(27,29,23,.12);
+  display:flex; flex-direction:column; gap:6px;
+}
+@media (min-width:760px){
+  .stat-cell{ border-top:none; border-left:1px solid rgba(27,29,23,.12); }
+  .stat-cell:first-child{ border-left:none; }
+}
+.stat-num{ font-family:var(--font-display); font-size:clamp(1.6rem,3vw,2.1rem); color:var(--redwood); line-height:1; }
+.stat-label{ font-family:var(--font-mono); font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-soft); }
+
+/* ---------- generic section scaffolding ---------- */
+section{ padding-block:clamp(56px,8vw,96px); }
+.section-head{ max-width:60ch; margin-bottom:clamp(32px,5vw,52px); }
+.section-eyebrow{
+  font-family:var(--font-mono); font-size:0.75rem; letter-spacing:0.14em; text-transform:uppercase;
+  color:var(--redwood); margin-bottom:12px; display:block;
+}
+.section-head h2{ font-size:clamp(1.8rem,4vw,2.6rem); color:var(--ink); }
+.section-head p{ margin-top:14px; color:var(--ink-soft); font-size:1.05rem; max-width:56ch; }
+
+.reveal{ opacity:0; transform:translateY(18px); transition:opacity .6s cubic-bezier(.22,.61,.36,1), transform .6s cubic-bezier(.22,.61,.36,1); }
+.reveal.in{ opacity:1; transform:none; }
+
+/* ---------- services bento ---------- */
+.bento{
+  display:grid; grid-template-columns:1fr; gap:16px;
+}
+@media (min-width:760px){
+  .bento{ grid-template-columns:repeat(2,1fr); grid-template-rows:auto auto; }
+  .bento .card--lead{ grid-column:1 / 2; grid-row:1 / 3; }
+}
+.card{
+  background:var(--ink); color:var(--paper); border-radius:6px; padding:28px;
+  display:flex; flex-direction:column; gap:14px; position:relative; overflow:hidden;
+  border:1px solid rgba(224,138,82,.18);
+}
+.card--lead{ background:var(--redwood); border-color:transparent; }
+.card--lead .card-icon{ background:rgba(242,237,224,.18); color:var(--paper); }
+.card--lead .card-desc{ color:rgba(242,237,224,.88); }
+.card-icon{
+  width:46px; height:46px; border-radius:8px; background:rgba(224,138,82,.16); color:var(--redwood-bright);
+  display:flex; align-items:center; justify-content:center;
+}
+.card-icon svg{ width:24px; height:24px; }
+.card h3{ font-size:1.2rem; }
+.card-desc{ color:var(--paper-soft); font-size:0.96rem; }
+.card--lead h3{ font-size:1.5rem; }
+
+/* ---------- process (legit sequence) ---------- */
+.process{ background:var(--paper-soft); }
+.process-rail{
+  display:grid; grid-template-columns:1fr; gap:0;
+}
+@media (min-width:860px){
+  .process-rail{ grid-template-columns:repeat(4,1fr); }
+}
+.step{
+  position:relative; padding:22px 18px 10px; border-left:2px dashed rgba(168,71,31,.35);
+}
+@media (min-width:860px){
+  .step{ border-left:none; border-top:2px dashed rgba(168,71,31,.35); padding:22px 16px 0; }
+}
+.step-num{
+  font-family:var(--font-mono); font-size:0.75rem; color:var(--redwood); letter-spacing:0.08em;
+  position:absolute; left:-9px; top:14px; background:var(--redwood); color:var(--paper);
+  width:18px; height:18px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+}
+@media (min-width:860px){
+  .step-num{ left:16px; top:-10px; }
+}
+.step-icon{ width:38px; height:38px; color:var(--redwood); margin-bottom:12px; }
+.step-icon svg{ width:100%; height:100%; }
+.step h3{ font-family:var(--font-display); text-transform:none; font-size:1.05rem; margin-bottom:8px; letter-spacing:0; }
+.step p{ color:var(--ink-soft); font-size:0.94rem; }
+
+/* ---------- warranty band ---------- */
+.warranty{
+  background:var(--redwood); color:var(--paper);
+  display:grid; grid-template-columns:1fr; gap:32px; align-items:center;
+}
+@media (min-width:820px){
+  .warranty-inner{ display:grid; grid-template-columns:auto 1fr; gap:48px; align-items:center; }
+}
+.warranty-num{ font-family:var(--font-display); font-size:clamp(5rem,14vw,9rem); line-height:0.85; color:var(--paper); }
+.warranty-label{ font-family:var(--font-mono); letter-spacing:0.1em; text-transform:uppercase; font-size:0.85rem; color:rgba(242,237,224,.85); margin-top:8px; }
+.warranty-list{ list-style:none; padding:0; margin:18px 0 0; display:flex; flex-direction:column; gap:14px; }
+.warranty-list li{ display:flex; gap:12px; align-items:flex-start; font-size:1.02rem; }
+.warranty-list svg{ width:20px; height:20px; flex-shrink:0; margin-top:2px; color:var(--amber); }
+
+/* ---------- craft editorial ---------- */
+.craft-inner{ display:grid; grid-template-columns:1fr; gap:28px; }
+@media (min-width:860px){
+  .craft-inner{ grid-template-columns:0.85fr 1.15fr; gap:56px; align-items:start; }
+}
+.craft-inner h2{ font-size:clamp(1.9rem,4vw,2.6rem); color:var(--ink); }
+.craft-inner p{ color:var(--ink-soft); font-size:1.05rem; margin-top:16px; }
+.craft-inner p + p{ margin-top:14px; }
+
+/* ---------- proof tags ---------- */
+.proof-wrap{ display:flex; flex-wrap:wrap; gap:22px; }
+.tag-card{
+  background:var(--ink); color:var(--paper); border-radius:6px; padding:20px 22px;
+  display:flex; align-items:center; gap:14px; min-width:230px; flex:1 1 240px;
+  box-shadow:0 10px 26px rgba(27,29,23,.14);
+}
+.tag-card:nth-child(2){ transform:rotate(-0.6deg); }
+.tag-card:nth-child(3){ transform:rotate(0.6deg); }
+.tag-card svg{ width:26px; height:26px; color:var(--redwood-bright); flex-shrink:0; }
+.tag-num{ font-family:var(--font-display); font-size:1.3rem; color:var(--paper); }
+.tag-label{ font-family:var(--font-mono); font-size:0.74rem; color:var(--steel); letter-spacing:0.04em; }
+
+/* ---------- final CTA ---------- */
+.final-cta{ background:var(--ink); color:var(--paper); text-align:center; }
+.final-cta h2{ font-size:clamp(2rem,5vw,3rem); color:var(--paper); max-width:18ch; margin-inline:auto; }
+.final-cta p{ margin-top:16px; color:var(--paper-soft); max-width:52ch; margin-inline:auto; font-size:1.05rem; }
+.final-cta .hero-ctas{ justify-content:center; margin-top:30px; }
+
+/* ---------- footer ---------- */
+.site-footer{ background:var(--paper-soft); padding-block:clamp(44px,7vw,72px) 24px; }
+.footer-grid{ display:grid; grid-template-columns:1fr; gap:36px; }
+@media (min-width:760px){
+  .footer-grid{ grid-template-columns:1.1fr 1fr 1fr; gap:32px; }
+}
+.footer-brand .brand-word{ color:var(--ink); }
+.footer-brand .brand-word b{ color:var(--redwood); }
+.footer-tagline{ margin-top:12px; color:var(--ink-soft); font-size:0.95rem; max-width:34ch; }
+.footer-col h4{
+  font-family:var(--font-mono); font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase;
+  color:var(--redwood); margin-bottom:14px;
+}
+.footer-line{ display:flex; align-items:center; gap:10px; margin-bottom:10px; color:var(--ink); text-decoration:none; font-size:0.95rem; }
+.footer-line svg{ width:17px; height:17px; color:var(--redwood); flex-shrink:0; }
+.hours-table{ width:100%; border-collapse:collapse; font-family:var(--font-mono); font-size:0.85rem; margin-top:4px; }
+.hours-table td{ padding:4px 0; color:var(--ink-soft); }
+.hours-table td:last-child{ text-align:right; color:var(--ink); }
+.footer-bottom{
+  margin-top:40px; padding-top:20px; border-top:1px solid rgba(27,29,23,.12);
+  display:flex; flex-wrap:wrap; gap:10px 18px; justify-content:space-between;
+  font-size:0.8rem; color:var(--ink-soft); font-family:var(--font-mono);
+}
+.footer-bottom a{ text-decoration:underline; }
+
+@media (max-width:420px){
+  .btn{ width:100%; justify-content:center; }
+  .hero-ctas{ flex-direction:column; }
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="#home" class="brand" aria-label="Fence King home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3 2 5v15c0 .6.4 1 1 1h2c.6 0 1-.4 1-1V5Z"/><path d="M6 8h4"/><path d="M6 18h4"/><path d="m12 3-2 2v15c0 .6.4 1 1 1h2c.6 0 1-.4 1-1V5Z"/><path d="M14 8h4"/><path d="M14 18h4"/><path d="m20 3-2 2v15c0 .6.4 1 1 1h2c.6 0 1-.4 1-1V5Z"/></svg>
+      </span>
+      <span class="brand-word">FENCE&nbsp;<b>KING</b></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#estimate">Estimates</a>
+      <a href="#warranty">Warranty</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-cta">
+      <a class="call-pill" href="tel:+17074489600">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+        <span class="sr-only-mobile">(707) 448-9600</span>
+        <span aria-hidden="true">(707) 448-9600</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobilePanel" aria-label="Toggle menu">
+        <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+        <svg class="icon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-panel" id="mobilePanel" aria-label="Mobile">
+    <a href="#services">Services</a>
+    <a href="#estimate">Estimates</a>
+    <a href="#warranty">Warranty</a>
+    <a href="#contact">Contact</a>
+    <a href="tel:+17074489600">Call (707) 448-9600</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+          Elmira, CA &middot; Serving Vacaville &amp; Solano County
+        </span>
+        <h1>Solano County's <span class="accent">Fence &amp; Gate</span> Builders</h1>
+        <p class="hero-sub">Real redwood fencing and driveway gates set on Post Master steel posts, not wood. Family-owned, fast written estimates, and every install backed by a 25-year transferable warranty.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="tel:+17074489600">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+            Call (707) 448-9600
+          </a>
+          <a class="btn btn-outline" href="mailto:FENCEKING96@yahoo.com?subject=Fence%20Estimate%20Request&amp;body=Hi%20Kirk%2C%20I%27d%20like%20a%20free%20estimate%20for%20my%20property%20in%20">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+            Request a Free Estimate
+          </a>
+        </div>
+        <div class="trust-row">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            30 Yelp Reviews
+          </span>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+            25-Year Warranty
+          </span>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></svg>
+            Family-Owned
+          </span>
+        </div>
+      </div>
+
+      <div class="hero-diagram" aria-hidden="true">
+        <svg viewBox="0 0 420 300" width="100%" height="auto">
+          <!-- dimension line -->
+          <line x1="30" y1="34" x2="390" y2="34" stroke="#e08a52" stroke-width="1.5"/>
+          <line x1="30" y1="26" x2="30" y2="42" stroke="#e08a52" stroke-width="1.5"/>
+          <line x1="390" y1="26" x2="390" y2="42" stroke="#e08a52" stroke-width="1.5"/>
+          <text x="165" y="24" class="dim-label">6' O.C. SPACING</text>
+
+          <!-- ground line -->
+          <line x1="10" y1="256" x2="410" y2="256" stroke="#8b9086" stroke-width="1" stroke-dasharray="2 8"/>
+
+          <!-- posts -->
+          <g stroke="#f2ede0" stroke-width="4" stroke-linecap="round">
+            <line x1="46" y1="60" x2="46" y2="256"/>
+            <line x1="136" y1="60" x2="136" y2="256"/>
+            <line x1="226" y1="60" x2="226" y2="256"/>
+            <line x1="316" y1="60" x2="316" y2="256"/>
+            <line x1="390" y1="60" x2="390" y2="256"/>
+          </g>
+          <!-- rails -->
+          <g stroke="#e08a52" stroke-width="3">
+            <line x1="46" y1="96" x2="390" y2="96"/>
+            <line x1="46" y1="220" x2="390" y2="220"/>
+          </g>
+          <!-- pickets -->
+          <g stroke="#8b9086" stroke-width="2" opacity="0.55">
+            <line x1="66" y1="70" x2="66" y2="248"/>
+            <line x1="86" y1="70" x2="86" y2="248"/>
+            <line x1="106" y1="70" x2="106" y2="248"/>
+            <line x1="156" y1="70" x2="156" y2="248"/>
+            <line x1="176" y1="70" x2="176" y2="248"/>
+            <line x1="196" y1="70" x2="196" y2="248"/>
+            <line x1="246" y1="70" x2="246" y2="248"/>
+            <line x1="266" y1="70" x2="266" y2="248"/>
+            <line x1="286" y1="70" x2="286" y2="248"/>
+            <line x1="336" y1="70" x2="336" y2="248"/>
+            <line x1="356" y1="70" x2="356" y2="248"/>
+            <line x1="376" y1="70" x2="376" y2="248"/>
+          </g>
+          <!-- post caps -->
+          <g fill="#f2ede0">
+            <circle cx="46" cy="60" r="4"/>
+            <circle cx="136" cy="60" r="4"/>
+            <circle cx="226" cy="60" r="4"/>
+            <circle cx="316" cy="60" r="4"/>
+            <circle cx="390" cy="60" r="4"/>
+          </g>
+          <text x="30" y="278" class="dim-label" font-size="10">POST MASTER STEEL POST, TYP.</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAT / SPEC STRIP -->
+  <section class="stat-strip" aria-label="Fence King at a glance">
+    <div class="wrap stat-grid">
+      <div class="stat-cell">
+        <span class="stat-num">25</span>
+        <span class="stat-label">Year Transferable Warranty</span>
+      </div>
+      <div class="stat-cell">
+        <span class="stat-num">30</span>
+        <span class="stat-label">Yelp Reviews on Record</span>
+      </div>
+      <div class="stat-cell">
+        <span class="stat-num">95687</span>
+        <span class="stat-label">Elmira &amp; Vacaville Zip</span>
+      </div>
+      <div class="stat-cell">
+        <span class="stat-num">Steel</span>
+        <span class="stat-label">Post Master Construction</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES BENTO -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">What We Build</span>
+        <h2>Built for Solano County Properties</h2>
+        <p>From full property lines to a single driveway gate, every job goes in on steel posts so it stays straight, not leaning, for the life of the warranty.</p>
+      </div>
+
+      <div class="bento">
+        <article class="card card--lead reveal">
+          <span class="card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3 2 5v15c0 .6.4 1 1 1h2c.6 0 1-.4 1-1V5Z"/><path d="M6 8h4"/><path d="M6 18h4"/><path d="m12 3-2 2v15c0 .6.4 1 1 1h2c.6 0 1-.4 1-1V5Z"/><path d="M14 8h4"/><path d="M14 18h4"/><path d="m20 3-2 2v15c0 .6.4 1 1 1h2c.6 0 1-.4 1-1V5Z"/></svg>
+          </span>
+          <h3>Redwood Fences</h3>
+          <p class="card-desc">Real redwood fencing set on Post Master steel posts instead of wood, so your line stays straight for decades. Multiple styles built to match your property.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+          </span>
+          <h3>Steel-Post Gates</h3>
+          <p class="card-desc">Driveway and entry gates framed on the same steel-post system as our fences, built so the gate will not sag or drag.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></svg>
+          </span>
+          <h3>Repair &amp; Restoration</h3>
+          <p class="card-desc">Storm damage, leaning posts, broken pickets. We repair existing fences, not just build new ones.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+          </span>
+          <h3>RV &amp; Walk-Path Gates</h3>
+          <p class="card-desc">Wide-clearance RV gates and smaller walk-path gates sized to fit exactly how you use your property.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="picket-rail" role="presentation"></div>
+
+  <!-- PROCESS (real estimate flow, addresses slow-estimate pain point) -->
+  <section class="process" id="estimate">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">How It Works</span>
+        <h2>Fast Estimates. No Runaround.</h2>
+        <p>You call, we come look, you get a real number, fast. No waiting months for someone to call you back.</p>
+      </div>
+
+      <div class="process-rail">
+        <div class="step reveal">
+          <span class="step-num">1</span>
+          <span class="step-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+          </span>
+          <h3>Call or Message Us</h3>
+          <p>Reach Kirk directly at (707) 448-9600, by email, or on Instagram @fenceking96.</p>
+        </div>
+        <div class="step reveal">
+          <span class="step-num">2</span>
+          <span class="step-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22a1 1 0 0 1-1-1v-4a1 1 0 0 1 .445-.832l3-2a1 1 0 0 1 1.11 0l3 2A1 1 0 0 1 22 17v4a1 1 0 0 1-1 1z"/><path d="M18 10a8 8 0 0 0-16 0c0 4.993 5.539 10.193 7.399 11.799a1 1 0 0 0 .601.2"/><path d="M18 22v-3"/><circle cx="10" cy="10" r="3"/></svg>
+          </span>
+          <h3>We Walk Your Property</h3>
+          <p>A real visit to measure your line and talk through gates, styles, and steel-post spacing.</p>
+        </div>
+        <div class="step reveal">
+          <span class="step-num">3</span>
+          <span class="step-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg>
+          </span>
+          <h3>Estimate the Same Week</h3>
+          <p>You get a written number fast, not a call back next month.</p>
+        </div>
+        <div class="step reveal">
+          <span class="step-num">4</span>
+          <span class="step-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>
+          </span>
+          <h3>Built and Backed 25 Years</h3>
+          <p>Installed on steel posts and covered by a 25-year transferable warranty.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WARRANTY BAND -->
+  <section class="warranty" id="warranty" aria-labelledby="warranty-heading">
+    <div class="wrap warranty-inner">
+      <div class="reveal">
+        <h2 id="warranty-heading" class="sr-only">25-Year Transferable Warranty</h2>
+        <div class="warranty-num" aria-hidden="true">25</div>
+        <div class="warranty-label">Year Transferable Warranty</div>
+      </div>
+      <ul class="warranty-list reveal">
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          Steel posts, not wood. They won't rot, lean, or twist in Solano County heat.
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          Family-owned and operated, not a franchise crew.
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          Serving Elmira, Vacaville, and all of Solano County.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CRAFT EDITORIAL -->
+  <section aria-labelledby="craft-heading">
+    <div class="wrap craft-inner">
+      <h2 id="craft-heading" class="reveal">Steel Posts. Real Redwood. Built to Last.</h2>
+      <div class="reveal">
+        <p>Most fence companies set wood posts straight into the dirt. Fence King sets every redwood fence and gate on Post Master steel posts instead, so the line you pay for is the line you keep: no leaning, no rot, no early replacement.</p>
+        <p>That is why every install carries a 25-year transferable warranty, one that follows the fence even if you sell the property. It is real material and real construction, priced and explained on a written estimate before any work starts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF -->
+  <section id="reviews" aria-labelledby="proof-heading">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Proof in the Numbers</span>
+        <h2 id="proof-heading">A Real, Established Local Crew</h2>
+        <p>No stock reviews. Just where you can find and check us.</p>
+      </div>
+      <div class="proof-wrap">
+        <div class="tag-card reveal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+          <div>
+            <div class="tag-num">30 Yelp Reviews</div>
+            <div class="tag-label">Elmira, CA listing</div>
+          </div>
+        </div>
+        <div class="tag-card reveal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></svg>
+          <div>
+            <div class="tag-num">384 Followers</div>
+            <div class="tag-label">On Facebook</div>
+          </div>
+        </div>
+        <div class="tag-card reveal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/></svg>
+          <div>
+            <div class="tag-num">@fenceking96</div>
+            <div class="tag-label">Active on Instagram</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta" id="get-estimate">
+    <div class="wrap">
+      <h2 class="reveal">Get Your Free Estimate This Week</h2>
+      <p class="reveal">Call, text, or message us on Instagram and get a real number for your property, not a callback next month.</p>
+      <div class="hero-ctas reveal">
+        <a class="btn btn-primary" href="tel:+17074489600">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+          Call (707) 448-9600
+        </a>
+        <a class="btn btn-outline" href="mailto:FENCEKING96@yahoo.com?subject=Fence%20Estimate%20Request">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+          Email FENCEKING96@yahoo.com
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="brand" aria-label="Fence King home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3 2 5v15c0 .6.4 1 1 1h2c.6 0 1-.4 1-1V5Z"/><path d="M6 8h4"/><path d="M6 18h4"/><path d="m12 3-2 2v15c0 .6.4 1 1 1h2c.6 0 1-.4 1-1V5Z"/><path d="M14 8h4"/><path d="M14 18h4"/><path d="m20 3-2 2v15c0 .6.4 1 1 1h2c.6 0 1-.4 1-1V5Z"/></svg>
+        </span>
+        <span class="brand-word">FENCE&nbsp;<b>KING</b></span>
+      </a>
+      <p class="footer-tagline">Fence and gate contractor serving Elmira, Vacaville, and all of Solano County.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact &amp; Service Area</h4>
+      <a class="footer-line" href="tel:+17074489600">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+        (707) 448-9600
+      </a>
+      <a class="footer-line" href="mailto:FENCEKING96@yahoo.com">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+        FENCEKING96@yahoo.com
+      </a>
+      <div class="footer-line">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+        Elmira &amp; Vacaville, CA 95687
+      </div>
+      <a class="footer-line" href="https://instagram.com/fenceking96" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/></svg>
+        @fenceking96 on Instagram
+      </a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Hours</h4>
+      <table class="hours-table">
+        <tr><td>Mon &ndash; Fri</td><td>8:00 AM &ndash; 5:00 PM</td></tr>
+        <tr><td>Sat &ndash; Sun</td><td>Closed</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <span>&copy; <span id="year">2026</span> Fence King. Family-owned in Elmira, CA.</span>
+    <span>Demo built by Pro Website Builders. No stock photography used on this page.</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var toggle = document.getElementById('navToggle');
+  var panel = document.getElementById('mobilePanel');
+  if(toggle && panel){
+    toggle.addEventListener('click', function(){
+      var open = panel.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    panel.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        panel.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  var yearEl = document.getElementById('year');
+  if(yearEl){ yearEl.textContent = new Date().getFullYear(); }
+
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var reveals = document.querySelectorAll('.reveal');
+  if(reduce || !('IntersectionObserver' in window)){
+    reveals.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry, i){
+        if(entry.isIntersecting){
+          setTimeout(function(){ entry.target.classList.add('in'); }, (i % 4) * 70);
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(function(el){ io.observe(el); });
+  }
+})();
+</script>
+
+</body>
+</html>
